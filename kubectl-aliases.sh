@@ -155,3 +155,6 @@ alias kgcj='kubectl get cronjob'
 alias kecj='kubectl edit cronjob'
 alias kdcj='kubectl describe cronjob'
 alias kdelcj='kubectl delete cronjob'
+
+# Kubectl Autocompletion
+source <(kubectl completion bash)
