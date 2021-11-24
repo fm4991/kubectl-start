@@ -158,3 +158,7 @@ alias kdelcj='kubectl delete cronjob'
 
 # Kubectl Autocompletion
 source <(kubectl completion bash)
+
+# kubectl Tanzu login
+alias kvl='kubectl vsphere login --server'
+alias kvli='kubectl vsphere login --insecure-skip-tls-verify --server'
