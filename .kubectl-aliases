@@ -164,3 +164,6 @@ source <(kubectl completion bash)
 alias kvl='kubectl vsphere login --server'
 alias kvli='kubectl vsphere login --insecure-skip-tls-verify --server'
 alias kvlo='kubectl vsphere logout'
+
+# auto add all yaml file in ~/.kube to KUBECONFIG env
+export KUBECONFIG=$(find ~/.kube/ -maxdepth 1 -type f -printf "%p:")
